@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+        <link rel="script" href="script.js">
+    <title>Document</title>
+</head>
+<body>
+
+      <header class="header">
+        <a href="#" class="LOGO">🌱</a>     
+        <nav class="navbar">
+        
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>  
+<select id="citySelect" onchange="goToCityPage()">
+  <option value="">Select a city</option>
+  <option value="./cities/seoul.html">Seoul</option>
+  <option value="./cities/gyeonggi.html">Gyeonggi</option>
+  <option value="./cities/gangwon.html">Gangwon</option>
+  <option value="./cities/north_gyeongsang.html">North Gyeongsang</option>
+  <option value="./cities/north_chungcheong.html">North Chungcheong</option>
+  <option value="./cities/south_chungcheong.html">South Chungcheong</option>
+  <option value="./cities/sejong.html">Sejong</option>
+  <option value="./cities/daejeon.html">Daejeon</option>
+  <option value="./cities/daegu.html">Daegu</option>
+  <option value="./cities/north_jeolla.html">North Jeolla</option>
+  <option value="./cities/south_gyeongsang.html">South Gyeongsang</option>
+  <option value="./cities/ulsan.html">Ulsan</option>
+  <option value="./cities/busan.html">Busan</option>
+  <option value="./cities/south_jeolla.html">South Jeolla</option>
+  <option value="./cities/jeju.html">Jeju</option>
+
+
+  <script>
+    document.getElementById("citySelect").addEventListener("change", function() {
+      const selectedCity = this.value;
+      if (selectedCity) {
+        window.location.href = selectedCity; // Go to the selected city's page
+      }
+    });
+  </script>
+  </select>
+      </nav>
+  
+     </header>
+   <div class="Page1">
+  <h1>EcoPath</h1>
+  <p class="tagline">Small steps today for a brighter, eco-friendly tomorrow.</p>
+  <h2 class="Swap">Swap Down</h2>
+</div>
+
+    </div>
+   
+   
+
+ <main>
+      <div class="image">
+
+        <div class="inPage2" id="page2">
+
+
+          <h4>•Issue</h4>
+          <p style="background-color:aliceblue; color: black; margin: 1rem; background-size:auto; margin: 3rem; padding: 1rem;">As Seoul was rapidly developing in economic terms in the 1980s, the volume of the city’s waste skyrocketed as well. As of 1991, the average
+            <br> daily waste generated per capita in Seoul was 3 kg, remarkably larger than Japan’s 1 kg, and the UK’s and Germany’s 0.9 kg (Ministry of Environment, 2012). <br>In particular, the situation at Nanjido Landfill Site, 
+             where leachate and toxic gas leaks and other environmental issues such as groundwater contamination <br>reared their ugly heads, amplified the need to better manage the demand for waste services.
+          <br>
+          <br>
+             Meanwhile, siting and construction of waste treatment facilities resulted in local opposition and became more complicated in the 1990s when
+             <br>the local autonomy system was introduced, making the mediation of conflicts between local governments even more difficult. Though the <br>Seoul Metropolitan Government (SMG) was able to secure the land for Sudokwon 
+             Landfill Site, use of the site was supposed to end in 2006. <br>It soon became evident that expanding the waste treatment facilities would not meet the ever-increasing demand.</p>
+            <img src="pic/chart1.png" alt="chart1">
+
+            <p style="background-color:aliceblue; color: black; margin: 1rem; background-size:auto; margin: 3rem; margin-bottom: 2rem; padding: 1rem; padding-bottom: 2rem;">Despite government efforts to promote recycling and reduce waste, including the enactment of supporting laws, recycling rates remained a very<br>
+               low 5% into the late 1990s. The low incentive for households to recycle was pointed out as one reason behind such poor participation as waste <br>
+               collection was charged at a fixed rate through property taxes or housing unit size, which was criticized for being illogical. The need to promote<br>
+                recycling while minimizing waste generation at the source surfaced as a main policy agenda.<br>       </p>
+         
+            </div>
+               
+            <div class="Page22">
+        <h1>Separation Guidelines</h1>
+          <img src="pic/classification.png" alt="classification" id="classification">
+        </div>
+
+      <div class="Page3" id="page3">
+      <h1>Map of South Korea</h1>
+      <img src="./pic/SKMap.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Seoul" title="Seoul" href="./cities/seoul.html" coords="241,162,207,190" shape="rect">
+    <area target="" alt="Gyeonggi" title="Gyeonggi" href="#" coords="250,183,233,196,218,201,191,201,183,218,190,232,190,253,205,277,241,290,298,272,333,227,336,186,307,150,264,59,211,101,153,178,191,143" shape="poly">
+    <area target="" alt="Gangwon" title="Gangwon" href="#" coords="268,57,296,92,312,119,327,169,365,232,407,231,459,261,521,262,546,225,520,180,420,11" shape="poly">
+    <area target="" alt="North Geyongsan" title="North Geyongsan" href="#" coords="459,264,407,310,332,343,356,406,372,512,383,537,459,471,485,478,465,537,491,551,537,520,566,501,514,484" shape="poly">
+    <area target="" alt="North Chungcheon" title="North Chungcheon" href="#" coords="317,270,284,308,290,364,309,421,335,452,375,433,358,404,364,355,375,312,396,306,414,265,379,248,368,222" shape="poly">
+    <area target="" alt="South Chungcheon" title="South Chungcheon" href="#" coords="150,281,206,292,234,299,266,294,274,310,268,323,244,318,247,344,254,374,264,409,309,428,306,452,264,426,198,271" shape="poly">
+    <area target="" alt="Sejong" title="Sejong" href="#" coords="250,323,266,338,279,359,269,369,250,359,256,372" shape="poly">
+    <area target="" alt="Daejong" title="Daejong" href="#" coords="274,369,293,372,298,392,284,406,264,400" shape="poly">
+    <area target="" alt="Daegu" title="Daegu" href="#" coords="435,512,430,482,459,454,480,454,475,472,473,484" shape="poly">
+    <area target="" alt="North Jeolla" title="North Jeolla" href="#" coords="262,435,295,452,342,451,337,478,326,499,317,512,317,547,290,563,230,555,205,537,160,556,180,534,211,483,211,466,179,452,231,435" shape="poly">
+    <area target="" alt="South Geyongsan" title="South Geyongsan" href="#" coords="352,472,389,497,435,518,495,553,523,537,536,576,523,598,500,572,510,533,513,499" shape="poly">
+    <area target="" alt="Ulsan" title="Ulsan" href="#" coords="551,500,571,512,551,553,533,532,520,518" shape="poly">
+    <area target="" alt="Busan" title="Busan" href="#" coords="512,583,551,562,544,587,512,615,500,603" shape="poly">
+    <area target="" alt="South Jeolla" title="South Jeolla" href="#" coords="223,558,256,574,303,583,334,619,326,652,306,673,278,646,268,701,249,735,207,720,122,722,114,642,138,605" shape="poly">
+    <area target="" alt="Jeju" title="Jeju" href="#" coords="162,900,43,43" shape="circle">
+</map>
+
+      </div>
+        
+          
+ 
+
+    </main>
+    
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>EcoPath 🌱</h2>
+      <p>Small steps today for a brighter, eco-friendly tomorrow.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: info@ecopath.org</p>
+      <p>Phone: +82 10-1234-5678</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EcoPath. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
